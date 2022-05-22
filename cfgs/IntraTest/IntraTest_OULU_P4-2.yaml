@@ -1,0 +1,22 @@
+common:
+    workers: 4
+    batch_size: 32
+    epochs: 40
+    policy: "step"
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0.0001
+    every_decay: 40
+    print_freq: 10
+    input_size: 224
+    save_path: ./checkpoints/IntraTest_OULU_P4-2
+    log_path: ./logs/IntraTest_OULU_P4-2
+    val: False
+    val_save: False
+    test: False
+    test_save: False
+    model_name: IntraTest_OULU_P4-2
+    dataset: OULU_NPU
+    color_space: rgb
+    se: False
+    protocol: '4-2'
